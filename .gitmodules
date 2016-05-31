@@ -4,3 +4,18 @@
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-clojure-static"]
+	path = bundle/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
