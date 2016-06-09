@@ -40,5 +40,6 @@ hi Normal ctermbg=none
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeShowHidden=1
 
 au BufRead,BufNewFile *.boot setfiletype clojure
