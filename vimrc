@@ -2,6 +2,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set background=dark
+set number
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -36,6 +37,7 @@ hi Keyword ctermfg=darkcyan
 hi Constant ctermfg=5*
 hi Comment ctermfg=2*
 hi Normal ctermbg=none
+hi LineNr ctermfg=darkgrey
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
@@ -43,3 +45,14 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeShowHidden=1
 
 au BufRead,BufNewFile *.boot setfiletype clojure
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+
+map <C-k> :call NumberToggle()<cr>
+
