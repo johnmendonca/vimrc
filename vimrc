@@ -3,6 +3,7 @@ set shiftwidth=2
 set softtabstop=2
 set background=dark
 set number
+set term=xterm-256color
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
