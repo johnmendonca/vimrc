@@ -52,3 +52,6 @@
 [submodule "bundle/psc-ide-vim"]
 	path = bundle/psc-ide-vim
 	url = https://github.com/FrigoEU/psc-ide-vim.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git

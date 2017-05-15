@@ -4,6 +4,7 @@ set softtabstop=2
 set background=dark
 set number
 set term=xterm-256color
+set laststatus=0
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -67,11 +68,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
 
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
