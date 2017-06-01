@@ -49,12 +49,12 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/psc-ide-vim"]
-	path = bundle/psc-ide-vim
-	url = https://github.com/FrigoEU/psc-ide-vim.git
 [submodule "bundle/vim-tmux-navigator"]
 	path = bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
+[submodule "bundle/psc-ide-vim"]
+	path = bundle/psc-ide-vim
+	url = https://github.com/FrigoEU/psc-ide-vim.git
