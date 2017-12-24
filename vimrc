@@ -1,13 +1,28 @@
+syntax on
+filetype plugin indent on
+
+set nocompatible
+set number
+set showmode
+set smartcase
+set smarttab
+set smartindent
+set autoindent
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set background=dark
-set number
 set term=xterm-256color
 set laststatus=0
+
+set completeopt=menuone,menu,longest
+set completeopt+=longest
+
+set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+set wildmode=longest,list,full
+set wildmenu
+
 execute pathogen#infect()
-syntax on
-filetype plugin indent on
 
 let g:rbpt_colorpairs = [
     \ ['darkcyan',       'SeaGreen3'],
@@ -65,8 +80,8 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 set omnifunc=syntaxcomplete#Complete
@@ -81,4 +96,10 @@ au FileType purescript nmap <leader>p :PSCIDEpursuit<CR>
 au FileType purescript nmap <leader>c :PSCIDEcaseSplit<CR>
 au FileType purescript nmap <leader>qd :PSCIDEremoveImportQualifications<CR>
 au FileType purescript nmap <leader>qa :PSCIDEaddImportQualifications<CR>
+
+map <silent> tw :GhcModTypeInsert<CR>
+map <silent> ts :GhcModSplitFunCase<CR>
+map <silent> tq :GhcModType<CR>
+map <silent> te :GhcModTypeClear<CR>
+map <silent> tc :GhcModCheck<CR>
 
