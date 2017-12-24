@@ -103,3 +103,21 @@ map <silent> tq :GhcModType<CR>
 map <silent> te :GhcModTypeClear<CR>
 map <silent> tc :GhcModCheck<CR>
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" Disable haskell-vim omnifunc
+let g:haskellmode_completion_ghc = 0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:necoghc_enable_detailed_browse = 1
+
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+
+if has("gui_running")
+  imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+else " no gui
+  if has("unix")
+    inoremap <Nul> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+  endif
+endif
+

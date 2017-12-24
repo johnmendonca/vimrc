@@ -55,3 +55,18 @@
 [submodule "bundle/psc-ide-vim"]
 	path = bundle/psc-ide-vim
 	url = https://github.com/FrigoEU/psc-ide-vim.git
+[submodule "bundle/deoplete.nvim"]
+	path = bundle/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "bundle/vim-hug-neovim-rpc"]
+	path = bundle/vim-hug-neovim-rpc
+	url = https://github.com/roxma/vim-hug-neovim-rpc.git
+[submodule "bundle/nvim-yarp"]
+	path = bundle/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp.git
+[submodule "bundle/neco-ghc"]
+	path = bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
